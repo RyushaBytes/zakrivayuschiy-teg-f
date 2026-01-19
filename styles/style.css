@@ -167,6 +167,13 @@
     1px 1px 0 var(--text-stroke-color);
 }
 
+@supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+}
+
 .card__content {
   margin-bottom: 1.5rem;
 }
@@ -452,4 +459,34 @@
   animation: sparks 0.3s ease-in 0.3s 1 normal;
 }
 
-/*ФИЛЬТРЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ*/
+.filter-sepia {
+  filter: sepia(0.7);
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.filter-blur {
+  filter: blur(2px);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.filter-contrast {
+  filter: contrast(1.5);
+}
+
+.filter-saturate {
+  filter: saturate(1.8);
+}
+
+.filter-multiple {
+  filter: sepia(0.3) hue-rotate(180deg) contrast(1.2) saturate(1.3);
+}
+
+.filter-invert {
+  filter: invert(0.8);
+}
