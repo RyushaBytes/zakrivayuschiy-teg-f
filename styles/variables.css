@@ -12,20 +12,17 @@
 
   --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --logo-card-height: clamp(18.75rem, 13.3929rem + 22.8571vw, 23rem);
-  --header-padding: clamp(3.125rem, 1.7857rem + 5.7143vw, 6.125rem);
+  --header-padding: 6.25rem;
 
   --logo-main-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --logo-subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --logo-gap: clamp(0.5rem, 0.25rem + 1.0417vw, 1.25rem);
 
-  --card-padding: clamp(1.25rem, 0.8929rem + 1.5238vw, 1.5625rem);
-  --card-margin: clamp(1.5625rem, 0.8929rem + 2.8571vw, 3.125rem);
+  --card-padding: 1.5625rem;
+  --card-margin: 3.125rem;
 
   --card-bg-color: #fff;
   --card-border: 2px solid #000;
   --text-stroke-color: #fff;
-
-  --save-button-width: clamp(20rem, 14.2857rem + 24.7619vw, 22.5rem);
 
   --accent-color: #000000;
 

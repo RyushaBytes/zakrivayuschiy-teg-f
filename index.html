@@ -16,10 +16,10 @@
   <body class="page">
     <header class="header">
       <div class="content-section">
-        <a href="#" class="logo-card">
+        <h1 class="logo-card">
           <span class="logo-card__main">&lt;/HTML&gt;</span>
           <span class="logo-card__subtitle">Закрывающий тег</span>
-        </a>
+        </h1>
       </div>
     </header>
     <main class="main">
@@ -42,7 +42,7 @@
             <div class="card__content">
               <p class="card__text">
                 Это было самое начало пути. На этом этапе важно было
-                проникнуться основами и настроиться на учёбу. И, возможно,
+                проникнуться основами и настроиться на учёбу. И,, возможно,
                 подумать, как новые знания могут повлиять на ваше будущее.
               </p>
               <p class="card__text">
@@ -88,7 +88,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -162,7 +162,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -233,7 +233,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -306,7 +306,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -380,7 +380,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -451,7 +451,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -524,7 +524,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -599,7 +599,7 @@
                   </svg>
                 </button>
 
-                <button class="card__like-button" type="button">
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -607,16 +607,17 @@
           </article>
         </div>
         <div class="save-card-wrapper">
-          <button class="save-card" type="button" data-dialog="save-dialog">
-            <svg
-              class="save-card__icon"
-              width="21"
-              height="21"
-              style="color: #fff"
-            >
-              <use xlink:href="#bookmark"></use>
+          <button
+            class="save-card button"
+            type="button"
+            data-dialog="save-dialog"
+          >
+            <svg class="save-card__icon button__icon" width="21" height="21">
+              <use xlink:href="./svg/icons.svg#bookmark"></use>
             </svg>
-            <span class="save-card__text">Сохранить на память</span>
+            <span class="save-card__text button__text"
+              >Сохранить на память</span
+            >
           </button>
         </div>
       </div>
@@ -624,17 +625,17 @@
     <dialog class="dialog" id="save-dialog">
       <div class="dialog__content">
         <div class="dialog__message-container">
-          <svg class="dialog__icon" width="40" height="40">
-            <use xlink:href="#bookmark"></use>
+          <svg class="dialog__icon button__icon" width="40" height="40">
+            <use xlink:href="./svg/icons.svg#bookmark"></use>
           </svg>
-          <div class="dialog__message">
-            <p>ВСТАВЬТЕ</p>
-            <p>ДИСКЕТУ, ЧТОБЫ</p>
-            <p>ПРОДОЛЖИТЬ</p>
-          </div>
+          <p class="dialog__message">
+            Вставьте<br />
+            дискету, чтобы<br />
+            продолжить
+          </p>
         </div>
-        <button class="dialog__button" type="button" data-dialog-close>
-          <span class="dialog__button-text">ОК</span>
+        <button class="dialog__button button" type="button" data-dialog-close>
+          <span class="dialog__button-text button__text">Ок</span>
         </button>
       </div>
     </dialog>
@@ -654,14 +655,5 @@
         });
       });
     </script>
-
-    <svg style="display: none" aria-hidden="true">
-      <symbol id="bookmark" viewBox="0 0 39 39" fill="none">
-        <path
-          fill="currentColor"
-          d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18 0v3h-3V0zM15 0v3h-3V0zM12 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zM36 3v3h-3V3zM9 6v3H6V6zM9 3v3H6V3zM9 9v3H6V9zM30 6v3h-3V6zM30 3v3h-3V3zM30 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM21 12v3h-3v-3zM18 12v3h-3v-3zM15 12v3h-3v-3zM12 12v3H9v-3zM9 12v3H6v-3zM33 21v3h-3v-3zM30 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM21 21v3h-3v-3zM18 21v3h-3v-3zM15 21v3h-3v-3zM12 21v3H9v-3zM9 21v3H6v-3zM33 24v3h-3v-3zM9 24v3H6v-3zM33 27v3h-3v-3zM9 27v3H6v-3zM33 30v3h-3v-3zM9 30v3H6v-3zM9 33v3H6v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3zM30 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM21 36v3h-3v-3zM18 36v3h-3v-3zM15 36v3h-3v-3zM12 36v3H9v-3zM9 36v3H6v-3zM6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
-        />
-      </symbol>
-    </svg>
   </body>
 </html>
