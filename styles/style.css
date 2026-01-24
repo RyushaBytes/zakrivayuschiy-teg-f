@@ -293,6 +293,7 @@
   font-size: 0.875rem;
   line-height: 1.5;
   text-transform: uppercase;
+  max-width: 234px;
 }
 
 .dialog__button {
